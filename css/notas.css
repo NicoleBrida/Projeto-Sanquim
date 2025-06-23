@@ -1,0 +1,311 @@
+body {
+    background-color: #FAF5F5;
+    font: 100% comicsans, arial, sanserif, verdana, comic;
+    /*deixa fonte responsiva*/
+    margin: 0 auto;
+    /*margem do navegador*/
+    padding: 0;
+    /*distância com relação a margem*/
+    background-image: url(../imagens/teste\ fundo.png);
+    background-position: center;
+}
+
+#card1:hover,
+#card2:hover,
+#card3:hover,
+#card4:hover {
+    background-color: #f9dd9b;
+    color: #5F9EA0;
+    font-weight: bold;
+    border: solid 2px #f9dd9b;
+    /*muda a cor do card quando passa o mouse*/
+
+}
+
+#cardcursos {
+    width: 80%;
+    font-weight: bold;
+    margin: 0 auto;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: line;
+    align-items: center;
+    /* Faz os cards ficarem centralizados na horizontal */
+    gap: 10px;
+    /* Espaço entre os cards */
+
+}
+
+#card1,
+#card2,
+#card3,
+#card4 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 300px;
+    height: 100px;
+    background-color: #FAF5F5;
+    border: solid 2px;
+    color: #379091;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+/*busca*/
+
+#tituloBusca {
+    flex-wrap: wrap;
+    /* Para permitir quebrar linha */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    /* Diminui um pouco o espaço */
+    margin-top: 20px;
+}
+
+#divBusca:has(input:focus) {
+    border: 2px solid #FFB347;
+    box-shadow: 0 0 5px #FFB347;
+    /* Opcional: só pra dar um glow bonito */
+}
+
+#divBusca {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    background-color: #E0EEEE;
+    border: solid 2px #5F9EA0;
+    width: 260px;
+    height: 30px;
+    padding: 0 10px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+#txtBusca {
+    background-color: transparent;
+    padding-left: 5px;
+    font-size: 16px;
+    border: none;
+    height: 30px;
+}
+
+#divBusca input {
+    width: 200px;
+}
+
+#btnBusca {
+    border: none;
+    border-radius: 0 5px 5px 0;
+    width: 70px;
+    font-weight: bold;
+    background-color: rgb(55, 144, 145, 0.9);
+    cursor: pointer;
+    color: white;
+    height: 30px;
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+#btnBusca:hover {
+    background: #346566;
+
+}
+
+/* fim busca*/
+
+.mdi--customer-service {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M18.72 14.76c.35-.85.54-1.76.54-2.76c0-.72-.11-1.41-.3-2.05c-.65.15-1.33.23-2.04.23A9.07 9.07 0 0 1 9.5 6.34a9.2 9.2 0 0 1-4.73 4.88c-.04.25-.04.52-.04.78A7.27 7.27 0 0 0 12 19.27c1.05 0 2.06-.23 2.97-.64c.57 1.09.83 1.63.81 1.63c-1.64.55-2.91.82-3.78.82c-2.42 0-4.73-.95-6.43-2.66a9 9 0 0 1-2.24-3.69H2v-4.55h1.09a9.09 9.09 0 0 1 15.33-4.6a9 9 0 0 1 2.47 4.6H22v4.55h-.06L18.38 18l-5.3-.6v-1.67h4.83zm-9.45-2.99c.3 0 .59.12.8.34a1.136 1.136 0 0 1 0 1.6c-.21.21-.5.33-.8.33c-.63 0-1.14-.5-1.14-1.13s.51-1.14 1.14-1.14m5.45 0c.63 0 1.13.51 1.13 1.14s-.5 1.13-1.13 1.13s-1.14-.5-1.14-1.13a1.14 1.14 0 0 1 1.14-1.14'/%3E%3C/svg%3E");
+    background-color: #1f6768;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    /* deixa ele redondo como antes */
+}
+
+#ajuda {
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    border: none;
+    color: #379091;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    /* garante que fique por cima de outros elementos */
+}
+
+.mdi--customer-service:hover {
+    background-color: #142324;
+}
+
+.icone-ajuda:hover {
+    background-color: #ffb71b;
+}
+
+.icone-ajuda {
+    display: inline-block;
+    padding: 6px;
+    /* espaço para mostrar a borda amarela ao redor */
+    background-color: #FFC544;
+    border-radius: 50%;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    height: 60px;
+    cursor: pointer;
+}
+
+
+#conteudo {
+    padding: 20px;
+    padding-left: 20px;
+    float: center;
+}
+
+#inicio {
+    width: auto;
+    background-color: rgb(55, 144, 145, 0.9);
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+footer.fixar-rodape {
+    background-color: #FFDB87;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* HUMBURGUER*/
+
+.top-bar {
+    position: relative;
+    background-color: #FFDB87;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    padding: 1.5rem 2rem;
+    background-color: #FFDB87;
+    justify-content: center;
+}
+
+.checkbtn {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.nav-mobile {
+    display: none;
+    position: absolute;
+    top: 100px;
+    /* abaixo do topo */
+    left: 0;
+    background: #1b4243;
+    width: 200px;
+    z-index: 1;
+}
+
+#check:checked~.nav-mobile {
+    display: block;
+}
+
+.nav-mobile a {
+    color: white;
+    padding: 1rem 1.5rem;
+    display: block;
+}
+
+.nav-mobile {
+    text-align: left;
+    position: absolute;
+    top: 4.5rem;
+    left: 0;
+    background: #1b4243;
+    z-index: 1;
+    width: 200px;
+
+}
+
+.nav-mobile a:hover {
+    background-color: #142324;
+    padding: 18px;
+}
+
+.nav-mobile a:focus {
+    background-color: #142324;
+    padding: 18px;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .nav-mobile {
+        width: 100%;
+    }
+
+    .nav-mobile a {
+        font-size: 1.5rem;
+        padding: 1.5rem 2rem;
+        width: 85%;
+    }
+
+    .nav-mobile a:focus {
+        background-color: #142324;
+        padding: 18px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .nav-mobile {
+        width: 100%;
+    }
+
+    .nav-mobile a {
+        font-size: 1.5rem;
+        padding: 1.5rem 2rem;
+        width: 80%;
+    }
+
+    .nav-mobile a:focus {
+        background-color: #142324;
+        padding: 18px;
+    }
+}
+
+/*FIM HAMBUERGUER*/
