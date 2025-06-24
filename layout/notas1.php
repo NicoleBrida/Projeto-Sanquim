@@ -1,49 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php include '..//layout/header.php'; ?>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professor - Notas</title>
-    <link rel="stylesheet" href="../css/nota1.css" type="text/css">
+    <title>Notas 1 - Professor</title>
+    <link rel="stylesheet" href="../css/notas1.css" type="text/css">
 
 </head>
 
-<body>
-
-
-    <header class="top-bar">
-        <input type="checkbox" id="check" hidden>
-
-        <label for="check" class="checkbtn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list"
-                viewBox="0 0 16 16" color="#379091">
-                <path fill-rule="evenodd"
-                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
-            </svg>
-        </label>
-
-        <div class="logo">
-            <a href="telaprincipalprofessor.html"><img src="../imagens/logo_sanquim.webp" alt="Colégio Sanquim" /></a>
-        </div>
-
-        <nav class="nav-mobile">
-            <a href="telaprincipalprofessor.html"> Início </a>
-            <a href="turmas.html"> Turmas </a>
-            <a href="notas.html"> Notas </a>
-            <a href="arquivos.html"> Arquivos </a>
-            <a href="index.html"> Sair </a>
-        </nav>
-    </header>
-
-    <div id="conteudo">
-        <div id="inicio">
-            <h1>Notas</h1>
-            <p>Certificar de salvar as alterações</p>
-        </div>
+<div id="conteudo">
+    <div id="inicio">
+        <h1>Notas</h1>
+        <p>Certificar de salvar as alterações</p>
     </div>
 
-     <div id="tituloBusca">
+
+    <div id="tituloBusca">
         <h2>Turma 1 - T12025</h2>
     </div>
     <br>
@@ -109,23 +81,13 @@
             </tr>
         </table>
         <div class="botoes-container">
-            <a id="sair" href="notas.html">Sair</a>
+            <a id="sair" href="../layout/notas.php">Sair</a>
             <button id="freq">Registrar Nota</button>
         </div>
 
     </div>
 
-    <div id="ajuda">
-        <a href="#" class="icone-ajuda">
-            <span class="mdi--customer-service"></span>
-        </a>
-    </div>
+</div>
 
-    <footer class="fixar-rodape">
-        <p> </p>
-    </footer>
-    </div>
 
-</body>
-
-</html>
+<?php include '..//layout/footer.php'; ?>

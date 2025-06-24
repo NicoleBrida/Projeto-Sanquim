@@ -1,29 +1,14 @@
-#inicio {
-    width: auto;
-    background-color: rgb(55, 144, 145, 0.9);
-    border: none;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
+input[type="number"] {
+    width: 50px;
+    height: 20px;
+    margin: 10px;
+    /* Adiciona margem para espaçamento */
 }
-
-#conteudo {
-    padding: 20px;
-    padding-left: 20px;
-    float: center;
-}
-
-input[type="checkbox"] {
-      transform: scale(1.5); /* Aumenta o tamanho em 1.5 vezes */
-      margin: 10px; /* Adiciona margem para espaçamento */
-    }
 
 .container-tabela-e-botao {
     text-align: center;
     margin-top: 20px;
-        margin-bottom: 20px;
+    margin-bottom: 20px;
 
 }
 
@@ -36,8 +21,10 @@ h2 {
 
 .botoes-container {
     display: flex;
-    justify-content: flex-end; /* Alinha à direita */
-    gap: 10px; /* Espaço entre os botões */
+    justify-content: flex-end;
+    /* Alinha à direita */
+    gap: 10px;
+    /* Espaço entre os botões */
     margin-top: 20px;
     margin-right: 10%;
 }
@@ -61,8 +48,8 @@ h2 {
     background-color: #142324;
 }
 
-#sair:hover{
-        background-color: #142324;
+#sair:hover {
+    background-color: #142324;
 
 }
 
@@ -99,8 +86,8 @@ table {
     }
 
     .botoes-container {
-    margin-bottom: 20%;
-}
+        margin-bottom: 20%;
+    }
 }
 
 #tituloBusca {
@@ -112,4 +99,21 @@ table {
     gap: 15px;
     /* Diminui um pouco o espaço */
     margin-top: 20px;
+}
+
+#conteudo {
+    padding: 20px;
+    padding-left: 20px;
+    float: center;
+}
+
+#inicio {
+    width: auto;
+    background-color: rgb(55, 144, 145, 0.9);
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
 }

@@ -1,42 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php include '..//layout/header.php'; ?>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professor - Arquivos</title>
+    <title>Arquivos - Professor</title>
     <link rel="stylesheet" href="../css/arquivos.css" type="text/css">
-
 </head>
 
-<body>
 
-
-    <header class="top-bar">
-        <input type="checkbox" id="check" hidden>
-
-        <label for="check" class="checkbtn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list"
-                viewBox="0 0 16 16" color="#379091">
-                <path fill-rule="evenodd"
-                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
-            </svg>
-        </label>
-
-        <div class="logo">
-            <a href="telaprincipalprofessor.html"><img src="../imagens/logo_sanquim.webp" alt="Colégio Sanquim" /></a>
-        </div>
-
-        <nav class="nav-mobile">
-            <a href="telaprincipalprofessor.html"> Início </a>
-            <a href="turmas.html"> Turmas </a>
-            <a href="notas.html"> Notas </a>
-            <a href="arquivos.html"> Arquivos </a>
-            <a href="index.html"> Sair </a>
-        </nav>
-    </header>
-
-    <div id="conteudo">
+ <div id="conteudo">
 
         <div id="inicio">
             <h1>Arquivos</h1>
@@ -97,14 +69,14 @@
 
                 </tr>
                 <tr>
-                    <td><button id="card1"><a href="../imagens/ebook-manual-do-iniciante.pdf" class="link-arquivo">
+                    <td><button id="card1"><a href="../imagem/ebook-manual-do-iniciante.pdf" class="link-arquivo">
                                 MatemáticaBásica.pdf
                             </a></button></td>
                     <td>Matemática</td>
                     <td>Turma 1</td>
                 </tr>
                 <tr>
-                    <td> <button id="card2"><a href="../imagens/ebook-manual-do-iniciante.pdf" class="link-arquivo">
+                    <td> <button id="card2"><a href="../imagem/ebook-manual-do-iniciante.pdf" class="link-arquivo">
                                 PortuguêsFeliz.pdf
                             </a></button></td>
                     <td>Português</td>
@@ -112,7 +84,7 @@
 
                 </tr>
                 <tr>
-                    <td><button id="card3"><a href="../imagens/ebook-manual-do-iniciante.pdf" class="link-arquivo">
+                    <td><button id="card3"><a href="../imagem/ebook-manual-do-iniciante.pdf" class="link-arquivo">
                                 QuímicaOrgânica.pdf
                             </a></button></td>
                     <td>Química</td>
@@ -120,7 +92,7 @@
 
                 </tr>
                 <tr>
-                    <td><button id="card4"><a href="../imagens/ebook-manual-do-iniciante.pdf" class="link-arquivo">
+                    <td><button id="card4"><a href="../imagem/ebook-manual-do-iniciante.pdf" class="link-arquivo">
                                 SegundaGuerraMundial.pdf
                             </a></button></td>
                     <td>História</td>
@@ -128,7 +100,7 @@
 
                 </tr>
                 <tr>
-                    <td><button id="card5"><a href="../imagens/ebook-manual-do-iniciante.pdf" class="link-arquivo">
+                    <td><button id="card5"><a href="../imagem/ebook-manual-do-iniciante.pdf" class="link-arquivo">
                                 PrimeiraGuerraMundial.pdf
                             </a></button>
                     <td>História</td>
@@ -139,16 +111,4 @@
         </div>
     </div>
 
-    <div id="ajuda">
-        <a href="#" class="icone-ajuda">
-            <span class="mdi--customer-service"></span>
-        </a>
-    </div>
-
-    <footer class="fixar-rodape">
-        <p> </p>
-    </footer>
-
-</body>
-
-</html>
+<?php include '..//layout/footer.php'; ?>
