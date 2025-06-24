@@ -1,0 +1,42 @@
+#avisos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#tabela {
+    width: 100%;
+    max-width: 600px;
+    /* Tamanho máximo da tabela */
+    background-color: #194041;
+    color: #FFECC1;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+
+#conteudo {
+    padding: 20px;
+    padding-left: 20px;
+    float: center;
+}
+
+#inicio {
+    width: auto;
+    background-color: rgb(55, 144, 145, 0.9);
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+

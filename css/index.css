@@ -1,42 +1,74 @@
-#avisos {
+
+/* Paleta de cores Sanquim
+379091  verde escuro
+FFC544 amarelo escuro
+FFD984 médio
+FFECC1 claro
+*/
+body {
+    background-image: url('../imagem/fundo_grande.png');
+    background-color: #faf5f5;
+    background-size: 120%;
+    background-position: center;
+    margin: 0;
+    padding: 0; 
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh; /* Garante altura total da tela */
+    flex-direction: column; /* Para empilhar verticalmente */
+}
+
+
+
+.fundoTit {
+    background-color: #faf5f5;
+    max-width: 504px;
+    height: 90px;
+    flex-shrink: 0;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.titulo {
+    text-align: center;
+    color: #379091;
+    font-size: 40px;
+}
+
+.cardEsc {
+    width: 311px;
+    height: 341px;
+    flex-shrink: 0;
+    background-color: rgba(255, 197, 68, 0.6);
+    display: flex;
     flex-direction: column;
-    width: 100%;
-    color: white;
-    padding: 20px;
-    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
 }
 
-#tabela {
-    width: 100%;
-    max-width: 600px;
-    /* Tamanho máximo da tabela */
-    background-color: #194041;
-    color: #FFECC1;
-    padding: 20px;
-    text-align: center;
-    font-size: 16px;
-    border-radius: 10px;
-    box-sizing: border-box;
-}
-
-
-#conteudo {
-    padding: 20px;
-    padding-left: 20px;
-    float: center;
-}
-
-#inicio {
-    width: auto;
-    background-color: rgb(55, 144, 145, 0.9);
+button {
+    width: 186px;
+    height: 52px;
+    flex-shrink: 0;
+    background-color: #fff;
     border: none;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
+    color: rgb(56, 49, 49);
+    font-size: 22px;
+    margin-top: 21%;
+    transition: all 0.3s ease;
+  
 }
 
+button:hover {
+    background-color: #faf5f5;
+    border: 1px solid;
+    border-color: #000000;
+    color: #000000;
+    cursor: pointer;
+    transform: scale(1.05);
+    border: solid 1px;
+}

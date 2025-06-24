@@ -1,0 +1,126 @@
+
+body {
+  background-color: #faf5f5;
+  align-items: center;
+}
+
+h1 {
+  font-size: 40px;
+  color: #2d7273;
+  text-align: center;
+  margin: 10% 0;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+table {
+  margin: 0 auto 21%;
+  background-color: rgba(255, 247, 228, 0.6);
+  font-size: 19px;
+  border: none;
+  border-radius: 18px;
+  box-shadow: -5px 10px 35px 5px rgba(114, 112, 101, 0.4);
+}
+
+td {
+  padding: 12px 24px;
+}
+
+button {
+  width: 176px;
+  height: 50px;
+  flex-shrink: 0;
+  background-color: #faf5f5;
+  border: 1px solid #000000;
+  color: rgb(56, 49, 49);
+  font-size: 18px;
+  transition: all 0.3s ease;
+  margin: 10% 0 20%;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  border: solid 1px #000000;
+}
+
+a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 166px;
+  height: 50px;
+  flex-shrink: 0;
+  background-color: #faf5f5;
+  border: 1px solid #000000;
+  color: #000000;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 10% 0 20% 5%;
+}
+
+a:hover {
+  transform: scale(1.05);
+  border: solid 1px #000000;
+}
+
+.row .col-md-4 {
+  position: relative;
+  overflow: hidden;
+}
+
+.lado-esquerdo {
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80%;
+}
+
+.logo-sanq {
+  max-width: 80%;
+  height: auto;
+  object-fit: contain;
+}
+
+.lado-direito {
+  flex: 1 1 60%;
+  background-color: #fff7e4;
+  padding: 40px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: -5px 10px 35px 5px rgba(114, 112, 101, 0.2);
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lado-esquerdo,
+  .lado-direito {
+    flex: 1 1 100%;
+    border-radius: 0;
+    border-bottom: none;
+  }
+
+  .lado-esquerdo {
+    border-radius: 20px 20px 0 0;
+  }
+
+  .lado-direito {
+    border-radius: 0 0 20px 20px;
+  }
+}

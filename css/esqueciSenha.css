@@ -1,0 +1,143 @@
+body {
+    font: 100% arial, sanserif, verdana;
+    margin: 0;
+    padding: 0;
+    background-color: #379091;
+    background-position: center;
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.container {
+  background-color: white;
+  background-image: url(../imagem/fundo_grande.png);
+  background-position: center;
+  padding: 50px 50px;
+  max-width: 550px;
+  width: 90%;
+  margin: 80px auto; /* centraliza horizontalmente */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #379091;
+}
+h1 {
+  
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.descricao {
+  color: #444;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+label{
+    font-size: 23px;
+}
+input, select, textarea {
+  padding: 20px 15px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  resize: none;
+  transition: 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #379091;
+  outline: none;
+  box-shadow: 0 0 5px rgba(55, 144, 145, 0.3);
+}
+
+button {
+  background-color: white;
+  color: #379091;
+  border: solid 1px;
+  border-color: #379091;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 8%;
+  transition: 0.7s;
+}
+
+button:hover {
+  background-color: #379091;
+color: #faf5f4;
+transform: translateY(-10px);
+}
+form textarea{
+    height: 80px;
+}

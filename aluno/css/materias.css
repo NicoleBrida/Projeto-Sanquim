@@ -1,0 +1,234 @@
+
+body {
+   
+    font: 100% comicsans, arial, sanserif, verdana, comic;
+    margin: 0 auto;
+    padding-bottom: 5%;
+    background-image: url(../imagens/fundo_grande.png);
+    background-position: center;
+    
+}
+.tableMa{
+    border: solid 2px;
+}
+tr:nth-child(even) {
+    background-color: #ffe6ac;
+}
+tr:nth-child(odd) {
+    background-color: #FAF5F5;
+
+}
+
+table{
+    margin: 0 auto;
+    width: 55%;
+   font-size: 19px;
+    border-collapse: collapse;
+    margin-top: 2%;
+}
+button {
+    background-color: #379091;
+    color: white;
+    font-size: 19px;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #faf5f4;
+    border: 1px solid;
+    border-color: #2a7a7a;
+    color: #166566;
+
+}
+
+#tituloBusca h2 {
+    font-size: 22px;
+    margin: 0;
+}
+
+#tituloBusca {
+    flex-wrap: wrap;
+    /* Para permitir quebrar linha */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    /* Diminui um pouco o espaço */
+    margin-top: 20px;
+}
+
+/*busca*/
+
+#divBusca:has(input:focus) {
+    border: 2px solid #FFB347;
+    box-shadow: 0 0 5px #FFB347;
+    /* Opcional: só pra dar um glow bonito */
+}
+
+#divBusca {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    background-color: #E0EEEE;
+    border: solid 2px #5F9EA0;
+    width: 260px;
+    height: 30px;
+    padding: 0 10px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+#txtBusca {
+    background-color: transparent;
+    padding-left: 5px;
+    font-size: 16px;
+    border: none;
+    height: 30px;
+}
+
+#divBusca input {
+    width: 200px;
+}
+
+#btnBusca {
+    border: none;
+    border-radius: 0 5px 5px 0;
+    width: 70px;
+    font-weight: bold;
+    background-color: rgb(55, 144, 145, 0.9);
+    cursor: pointer;
+    color: white;
+    height: 30px;
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+#btnBusca:hover {
+    background: #346566;
+
+}
+
+/* fim busca*/
+
+#cardcursos {
+    width: 80%;
+    margin: 0 auto;
+    /*centralizar*/
+    padding-bottom: 10px;
+}
+
+.card1{
+    width: 350px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+    margin: 4px;
+    border-radius: 5px;
+
+}
+.link-arquivo {
+    color: #379091;
+    text-decoration: none;
+}
+
+.link-arquivo:hover {
+    color: #166566;
+}
+
+#enviados a img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+#enviados {
+    color: #379091;
+    padding: 20px;
+    text-align: center;
+}
+   .download-btn {
+            background-color: #379091;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        
+        .download-btn:hover {
+            background-color: #fff;
+            border: solid 1px;
+            border-color: #379091;
+            color: #166566;
+        }
+        
+        .link-container {
+            display: flex;
+            align-items: center;
+        }
+@media screen and (max-width: 768px) {
+
+    body {
+        padding: 0 10px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    table {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    #divBusca {
+        width: 100%;
+        flex-wrap: wrap;
+        height: auto;
+        padding: 5px;
+    }
+
+    #divBusca input {
+        width: 100%;
+        height: 30px;
+        margin-top: 5px;
+    }
+
+    #btnBusca {
+        width: 100%;
+        margin-top: 5px;
+        border-radius: 5px;
+    }
+
+    #tituloBusca h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .card1 {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    #cardcursos {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .link-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .download-btn {
+        width: 100%;
+        margin: 10px 0 0 0;
+        font-size: 14px;
+    }
+}

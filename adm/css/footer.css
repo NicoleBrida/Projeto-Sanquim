@@ -1,4 +1,6 @@
-
+body{
+    padding-bottom: 80px;
+}
 
 .mdi--customer-service {
     display: inline-block;
@@ -14,7 +16,7 @@
     mask-size: 100% 100%;
     /* deixa ele redondo como antes */
 }
-
+ 
 #ajuda {
     position: fixed;
     bottom: 60px;
@@ -27,15 +29,15 @@
     z-index: 10;
     /* garante que fique por cima de outros elementos */
 }
-
+ 
 .mdi--customer-service:hover {
     background-color: #142324;
 }
-
+ 
 .icone-ajuda:hover {
     background-color: #ffb71b;
 }
-
+ 
 .icone-ajuda {
     display: inline-block;
     padding: 6px;
@@ -43,16 +45,14 @@
     background-color: #FFC544;
     border-radius: 50%;
 }
-
-
+ 
+ 
 footer.fixar-rodape {
     background-color: #FFDB87;
     bottom: 0;
     left: 0;
     height: 40px;
-    position:fixed;
+    position: fixed;
     width: 100%;
     text-align: center;
 }
-
-

@@ -1,0 +1,28 @@
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    height: 60px;
+    cursor: pointer;
+}
+
+
+#conteudo {
+    padding: 20px;
+    padding-left: 20px;
+    float: center;
+}
+
+#inicio {
+    width: auto;
+    background-color: rgb(55, 144, 145, 0.9);
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}

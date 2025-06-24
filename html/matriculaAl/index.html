@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../js/validarForms.js">
+  <title>Formulário de Matrícula</title>
+</head>
+
+<body>
+
+  <form id="formMatricula" onsubmit="return validarFormulario()">
+    <table border="1" cellpadding="8" cellspacing="0">
+      <!-- Dados Pessoais -->
+      <tr >
+        <td style="padding-top: 10% ;"><labelfor="nomeCompleto">Nome Completo*</label></td>
+        <td style="padding-top: 10% ;"><input type="text" id="nomeCompleto" name="nomeCompleto" required placeholder="Julia Marques Rocha"></td>
+      </tr>
+
+      <tr>
+        <td><label>Nome social</label></td>
+        <td>
+          <input type="radio" id="sim" value="sim" name="esc" onchange="mostrarCampoNomeSocial()">
+          <label for="sim">Sim</label><br>
+
+          <div id="campoNomeSocial" style="display: none;">
+            <label for="nomeSocial">Digite seu nome social:</label><br>
+            <input type="text" id="nomeSocial" name="nomeSocial">
+          </div>
+
+          <input type="radio" id="nao" value="nao" name="esc" onchange="mostrarCampoNomeSocial()" checked>
+          <label for="nao">Não</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td><label for="dataNasc">Data de nascimento*</label></td>
+        <td><input type="date" id="dataNasc" name="dataNasc" required></td>
+      </tr>
+
+       <tr>
+        <td><label for="nomeMae">Nome da mãe*</label></td>
+        <td><input type="text" id="nomeMae" name="nomeMae" required placeholder="Renata Cristina da Silveira Rocha">
+        </td>
+      </tr>
+
+      <tr>
+        <td><label for="nomePai">Nome do pai</label></td>
+        <td><input type="text" id="nomePai" name="nomePai" placeholder="Anailton Marques Rocha"></td>
+      </tr> 
+
+      <!-- Contatos -->
+      <tr>
+        <td><label for="tel">Seu número de telefone*</label></td>
+        <td><input type="tel" id="tel" name="tel" required placeholder="00000000000"></td>
+      </tr>
+
+      <tr>
+        <td><label for="telCont">Número de telefone do responsável*</label></td>
+        <td><input type="tel" name="telCont" id="telCont" required placeholder="00000000000"></td>
+      </tr>
+
+      <tr>
+        <td><label for="email">Seu email*</label></td>
+        <td><input type="email" id="email" name="email" required placeholder="meuemail@gmail.com"></td>
+      </tr>
+
+      <tr>
+        <td><label for="emailAlt">Email alternativo*</label></td>
+        <td><input type="email" id="emailAlt" name="emailAlt" placeholder="meuemail2@gmail.com"></td>
+      </tr>
+      <tr>
+        <td><label for="cpf">CPF*</label></td>
+        <td><input type="text" id="cpf" name="cpf" required placeholder="00000000000"></td>
+      </tr>
+
+       <tr>
+        <td><label for="cpf">RG*</label></td>
+        <td><input type="text" id="rg" name="rg" required placeholder="000000000"></td>
+      </tr>
+
+      <!-- Endereço -->
+
+      <tr>
+        <td><label for="cep">CEP*</label></td>
+        <td>
+          <input type="text" id="cep" name="cep" required placeholder="00000000" maxlength="9">
+
+        </td>
+      </tr>
+
+      <tr>
+        <td><label for="cep">Endereço*</label></td>
+        <td>
+          <input type="text" id="cep" name="cep" required placeholder="Rua gaivota, n°234" maxlength="9">
+
+        </td>
+      </tr>
+
+
+      <tr>
+        <td><label for="bairro">Bairro*</label></td>
+        <td><input type="text" id="bairro" name="bairro" required placeholder="Canaã 1"></td>
+      </tr>
+
+      <tr>
+        <td><label for="cidade">Cidade*</label></td>
+        <td><input type="text" id="cidade" name="cidade" required placeholder="São Paulo"></td>
+      </tr>
+
+      <tr>
+        <td><label for="estado">Estado (UF)*</label></td>
+        <td>
+          <select id="estado" name="estado" required>
+            <option value="">Selecione</option>
+            <option value="AC">AC</option>
+            <option value="AL">AL</option>
+            <option value="AP">AP</option>
+            <option value="AM">AM</option>
+            <option value="BA">BA</option>
+            <option value="CE">CE</option>
+            <option value="DF">DF</option>
+            <option value="ES">ES</option>
+            <option value="GO">GO</option>
+            <option value="MA">MA</option>
+            <option value="MT">MT</option>
+            <option value="MS">MS</option>
+            <option value="MG">MG</option>
+            <option value="PA">PA</option>
+            <option value="PB">PB</option>
+            <option value="PR">PR</option>
+            <option value="PE">PE</option>
+            <option value="PI">PI</option>
+            <option value="RJ">RJ</option>
+            <option value="RN">RN</option>
+            <option value="RS">RS</option>
+            <option value="RO">RO</option>
+            <option value="RR">RR</option>
+            <option value="SC">SC</option>
+            <option value="SP">SP</option>
+            <option value="SE">SE</option>
+            <option value="TO">TO</option>
+          </select>
+        </td>
+      </tr>
+
+
+      <!-- Dados Escolares -->
+      <tr>
+        <td><label for="serie">Série em que está se matriculando*</label></td>
+        <td>
+          <select id="serie" name="serie" required>
+            <option value="">Selecione</option>
+            <option value="1ano">1º Ano Médio</option>
+            <option value="2ano">2º Ano Médio</option>
+            <option value="3ano">3º Ano Médio</option>
+            <!-- Adicione mais opções conforme necessário -->
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td><label for="turno">Turno*</label></td>
+        <td>
+          <select id="turno" name="turno" required>
+            <option value="">Selecione</option>
+            <option value="manha">Manhã</option>
+            <option value="tarde">Tarde</option>
+            <option value="noite">Noite</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>
+         
+        </td>
+        <td>
+           <button type="button" onclick="validarEAvancar()">Próxima Etapa</button>
+        </td>
+      </tr>
+    </table>
+
+
+
+  </form>
+
+  <!-- Scripts para máscaras e funcionalidades -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+  <script>
+
+    // Máscaras para os campos
+    $(document).ready(function () {
+      $('#tel').mask('00 00000-0000');
+      $('#telCont').mask('00 00000-0000');
+      $('#cpf').mask('000.000.000-00');
+       $('#rg').mask('00.000.000-0');
+      $('#cep').mask('00000-000');
+    });
+
+    // Para mostrar o nome social
+    function mostrarCampoNomeSocial() {
+      const campo = document.getElementById('campoNomeSocial');
+      const radioSim = document.getElementById('sim');
+      campo.style.display = radioSim.checked ? 'block' : 'none';
+    }
+  </script>
+  <script>
+    function validarEAvancar() {
+      // Verifica se todos os campos obrigatórios estão preenchidos
+      const form = document.getElementById("formMatricula");
+      const camposObrigatorios = form.querySelectorAll("[required]");
+
+      let valido = true;
+      camposObrigatorios.forEach(campo => {
+        if (!campo.value) {
+          valido = false;
+          campo.style.border = "1px solid red"; // Destaca campos vazios
+        }
+      });
+
+      // Se tudo estiver válido, avança para a próxima página
+      if (valido) {
+        window.location.href = "formP2.php";
+      } else {
+        alert("Preencha todos os campos obrigatórios!");
+      }
+    }
+  </script>
+</body>
+
+</html>

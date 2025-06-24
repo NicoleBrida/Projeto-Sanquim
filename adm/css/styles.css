@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #FAF5F5;
+  font: 100% comicsans, arial, sanserif, verdana, comic;
+  background-image: url(../imagens/teste\ fundo.png);
+    background-position: center;
+}
+
+.molduraLogin {
+  display: flex;
+  background-color: white;
+  padding: 30px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.425);
+  width: 570px;
+  height: 450px;
+}
+
+.coluna-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.coluna-logo img {
+  max-width: 150px;
+  height: auto;
+}
+
+.coluna-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+  padding-bottom: 50px;
+  width: 100%;
+}
+
+.coluna-form h1 {
+  margin-bottom: 20px;
+  font-size: 45px;
+  font-weight: bold;
+  
+}
+
+.coluna-form label {
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #ffc233;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #e6b029;
+}
+
+a{
+  margin-top: 20px;
+  color: black;
+  align-items: center;
+  align-self: center;
+}

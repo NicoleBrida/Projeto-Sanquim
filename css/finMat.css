@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background-size: cover; 
+    background-color: #faf5f5;
+}
+
+.confirmation-box {
+    background-color:  rgb(255, 247, 228,0.6);
+    color: #1a1a1a;
+    max-width: 350px;
+    padding: 40px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    box-shadow: -5px 10px 35px 5px rgb(114, 112, 101,0.4);
+    transition-duration: 0.7s;
+    text-align: justify;
+}
+.confirmation-box:hover{
+    transform:translatey(-19px);
+}

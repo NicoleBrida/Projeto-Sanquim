@@ -1,0 +1,104 @@
+
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    height: 60px;
+    cursor: pointer;
+}
+
+
+#conteudo {
+    padding: 20px;
+    padding-left: 20px;
+    float: center;
+}
+
+#inicio {
+    width: auto;
+    background-color: rgb(55, 144, 145, 0.9);
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+
+#cardcursos {
+    width: 550px;
+    background-color: #ffc4447a;
+    padding: 30px;
+    margin: 50px auto;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+#cardcursos label{
+    display: inline-block;
+    width: 140px;
+    font-weight: bold;
+}
+
+#cardcursos input,
+select{
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s;
+    margin-bottom: 10px;
+}
+
+#ra{
+    width: 186px;
+}
+
+#nome, 
+#responsavel{
+    width: 65%; 
+}
+
+#cpf, #rg, #email{
+    width: 48%;
+}
+
+#telefone, #cep{
+    width: 30%;
+}
+
+#endereco{
+    width: 277px;
+}
+
+#bairro, #cidade {
+    width: 200px;
+}
+
+#uf,
+#n{
+    width: 10%;
+}
+
+#cardcursos button {
+    display: block;
+    margin: 20px auto 0 auto;
+    padding: 10px 20px;
+    background-color: rgb(55, 144, 145, 0.9);;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#cardcursos button:hover {
+    background-color: #142324;
+    transform: scale(1.05);
+}

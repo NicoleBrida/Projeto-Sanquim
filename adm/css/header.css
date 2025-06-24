@@ -1,0 +1,141 @@
+body {
+    background-color: #FAF5F5;
+    font: 100% comicsans, arial, sanserif, verdana, comic;
+    /*deixa fonte responsiva*/
+    margin: 0 auto;
+    /*margem do navegador*/
+    padding: 0;
+    /*distância com relação a margem*/
+    background-image: url(../imagens/teste\ fundo.png);
+    background-position: center;
+}
+ a{
+    text-decoration: none;
+ }
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.logo img {
+    height: 60px;
+    cursor: pointer;
+}
+ 
+ 
+/* HUMBURGUER*/
+ 
+.top-bar {
+    position: relative;
+    background-color: #FFDB87;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+nav {
+    padding: 1.5rem 2rem;
+    justify-content: center;
+}
+ 
+.checkbtn {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    cursor: pointer;
+}
+ 
+.nav-mobile {
+    display: none;
+    position: absolute;
+    top: 100px;
+    /* abaixo do topo */
+    left: 0;
+    background: #1b4243;
+    width: 200px;
+    z-index: 1;
+}
+ 
+#check:checked~.nav-mobile {
+    display: block;
+}
+ 
+.nav-mobile {
+    text-align: left;
+    position: absolute;
+    top: 4.5rem;
+    left: 0;
+    background: #1b4243;
+    z-index: 1;
+    width: 200px;
+ 
+}
+ 
+.nav-mobile a {
+    color: white;
+    padding: 1rem 1.5rem;
+    display: block;
+}
+ 
+.nav-mobile a:hover {
+    background-color: #142324;
+    padding: 18px;
+}
+ 
+.nav-mobile a:focus {
+    background-color: #142324;
+    padding: 18px;
+}
+ 
+/* Quando a tela ficar menor que 600px, empilha os itens (coluna) */
+@media (max-width: 600px) {
+    #tituloBusca {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        /* Menor espaço entre o título e a busca */
+    }
+ 
+}
+ 
+ 
+@media only screen and (max-width: 700px) {
+    .nav-mobile {
+        width: 100%;
+    }
+ 
+    .nav-mobile a {
+        font-size: 1.5rem;
+        padding: 1.5rem 2rem;
+        width: 85%;
+    }
+ 
+    .nav-mobile a:focus {
+        background-color: #142324;
+        padding: 18px;
+    }
+}
+ 
+@media only screen and (max-width: 500px) {
+    .nav-mobile {
+        width: 100%;
+    }
+ 
+    .nav-mobile a {
+        font-size: 1.5rem;
+        padding: 1.5rem 2rem;
+        width: 80%;
+    }
+ 
+    .nav-mobile a:focus {
+        background-color: #142324;
+        padding: 18px;
+    }
+}
+ 
+ 
+/*FIM HAMBUERGUER*/

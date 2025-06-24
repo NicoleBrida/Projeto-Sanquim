@@ -1,0 +1,325 @@
+
+tr:nth-child(even) {
+    background-color: #ffe6ac;
+}
+
+tr:nth-child(odd) {
+    background-color: #FAF5F5;
+}
+
+table {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 30%;
+    border-collapse: collapse;
+}
+
+#card1:hover,
+#card2:hover,
+#card3:hover,
+#card4:hover,
+#card5:hover,
+#card6:hover,
+#card7:hover {
+    color: #166566;
+}
+
+#tituloBusca h2 {
+    font-size: 22px;
+    margin: 0;
+}
+
+#tituloBusca {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Busca */
+#divBusca:has(input:focus) {
+    border: 2px solid #FFB347;
+    box-shadow: 0 0 5px #FFB347;
+}
+
+#divBusca {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    background-color: #E0EEEE;
+    border: solid 2px #5F9EA0;
+    width: 260px;
+    height: 30px;
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+#txtBusca {
+    background-color: transparent;
+    padding-left: 5px;
+    font-size: 16px;
+    border: none;
+    height: 30px;
+}
+
+#divBusca input {
+    width: 200px;
+}
+
+#btnBusca {
+    border: none;
+    border-radius: 0 5px 5px 0;
+    width: 70px;
+    font-weight: bold;
+    background-color: rgb(55, 144, 145, 0.9);
+    cursor: pointer;
+    color: white;
+    height: 30px;
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+#btnBusca:hover {
+    background: #346566;
+}
+
+/* Cards de botões */
+#cardcursos {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+#card1,
+#card2,
+#card3,
+#card4,
+#card5,
+#card6,
+#card7 {
+    width: 250px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px;
+    cursor: pointer;
+}
+
+/* Ícone de ajuda */
+.mdi--customer-service {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M18.72 14.76c.35-.85.54-1.76.54-2.76c0-.72-.11-1.41-.3-2.05c-.65.15-1.33.23-2.04.23A9.07 9.07 0 0 1 9.5 6.34a9.2 9.2 0 0 1-4.73 4.88c-.04.25-.04.52-.04.78A7.27 7.27 0 0 0 12 19.27c1.05 0 2.06-.23 2.97-.64c.57 1.09.83 1.63.81 1.63c-1.64.55-2.91.82-3.78.82c-2.42 0-4.73-.95-6.43-2.66a9 9 0 0 1-2.24-3.69H2v-4.55h1.09a9.09 9.09 0 0 1 15.33-4.6a9 9 0 0 1 2.47 4.6H22v4.55h-.06L18.38 18l-5.3-.6v-1.67h4.83zm-9.45-2.99c.3 0 .59.12.8.34a1.136 1.136 0 0 1 0 1.6c-.21.21-.5.33-.8.33c-.63 0-1.14-.5-1.14-1.13s.51-1.14 1.14-1.14m5.45 0c.63 0 1.13.51 1.13 1.14s-.5 1.13-1.13 1.13s-1.14-.5-1.14-1.13a1.14 1.14 0 0 1 1.14-1.14'/%3E%3C/svg%3E");
+    background-color: #1f6768;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+
+#ajuda {
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    border: none;
+    color: #379091;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.mdi--customer-service:hover {
+    background-color: #142324;
+}
+
+.icone-ajuda:hover {
+    background-color: #ffb71b;
+}
+
+.icone-ajuda {
+    display: inline-block;
+    padding: 6px;
+    background-color: #FFC544;
+    border-radius: 50%;
+}
+
+.link-arquivo {
+    color: #379091;
+    text-decoration: none;
+}
+
+.link-arquivo:hover {
+    color: #166566;
+}
+
+#enviados a img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    height: 60px;
+    cursor: pointer;
+}
+
+#conteudo {
+    padding: 20px;
+    padding-left: 20px;
+    float: center;
+}
+
+#envio {
+    font-size: large;
+}
+
+#enviados {
+    color: #379091;
+    padding: 20px;
+    text-align: center;
+}
+
+#inicio {
+    width: auto;
+    background-color: rgb(55, 144, 145, 0.9);
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+
+/* ================================ */
+/*      NOVO CSS DOS PAINÉIS        */
+/* ================================ */
+.painel-arquivos {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.painel {
+    display: none;
+    background-color: #FFF5DC;
+    border: 2px solid #FDB813;
+    padding: 15px 20px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    color: #166566;
+}
+
+.painel h3 {
+    margin-top: 0;
+}
+
+.painel ul {
+    padding-left: 20px;
+}
+
+.painel ul li {
+    margin-bottom: 5px;
+}
+
+/* Mostrar painel quando botão está selecionado */
+#card1:checked ~ .painel-arquivos .painel1,
+#card2:checked ~ .painel-arquivos .painel2,
+#card3:checked ~ .painel-arquivos .painel3,
+#card4:checked ~ .painel-arquivos .painel4,
+#card5:checked ~ .painel-arquivos .painel5,
+#card6:checked ~ .painel-arquivos .painel6,
+#card7:checked ~ .painel-arquivos .painel7 {
+    display: block;
+}
+
+/* Botão de fechar */
+.fechar {
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+    padding: 2px 8px;
+    border-radius: 50%;
+}
+
+.fechar:hover {
+    background-color: #FDB813;
+    color: white;
+}
+
+/* Estilo dos botões da tabela */
+.botao-turma {
+    cursor: pointer;
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    color: rgb(55, 144, 145, 0.9);
+    font-size: 16px;
+    padding: 4px;
+    text-decoration: underline;
+    padding-left: 5%;
+}
+
+.botao-turma:hover {
+    color: #379091;
+}
+
+/* Painel de arquivos */
+.painel-arquivos {
+    width: 30%;
+    margin: 20px auto;
+}
+
+.painel {
+    display: none;
+    background-color: #FFF5DC;
+    border: 2px solid #FDB813;
+    padding: 15px 20px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    color: #166566;
+}
+
+.painel h3 {
+    margin-top: 0;
+}
+
+.painel ul {
+    padding-left: 20px;
+}
+
+.painel ul li {
+    margin-bottom: 5px;
+}
+
+/* Mostrar os painéis quando os checkboxes estão marcados */
+#painel1:checked ~ .painel-arquivos #caixa1,
+#painel2:checked ~ .painel-arquivos #caixa2,
+#painel3:checked ~ .painel-arquivos #caixa3,
+#painel4:checked ~ .painel-arquivos #caixa4,
+#painel5:checked ~ .painel-arquivos #caixa5,
+#painel6:checked ~ .painel-arquivos #caixa6,
+#painel7:checked ~ .painel-arquivos #caixa7 {
+    display: block;
+}
+
+/* Esconde os checkboxes */
+input[type="checkbox"] {
+    display: none;
+}

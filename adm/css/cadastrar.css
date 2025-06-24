@@ -1,0 +1,81 @@
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    height: 60px;
+    cursor: pointer;
+}
+
+
+#conteudo {
+    padding: 20px;
+    padding-left: 20px;
+    float: center;
+}
+
+#inicio {
+    width: auto;
+    background-color: rgb(55, 144, 145, 0.9);
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+#cardcursos {
+    background-color: #ffe6ac;
+    padding: 20px;
+    width: fit-content;
+    margin: 0 auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Botão */
+#novaTurma {
+    background-color: rgb(55, 144, 145, 0.9);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+#novaTurma:hover {
+    background-color: #379091;
+}
+
+/* Tabela */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: center;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+}
+
+thead {
+    background-color: #FFDB87;
+    color: rgb(55, 144, 145, 0.9);;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fff;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffe6ac;
+}
+
+tbody tr:hover {
+    background-color: #e0eeee;
+}
+

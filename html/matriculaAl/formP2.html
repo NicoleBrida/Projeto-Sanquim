@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../js/validarForms.js">
+    <title>Formulário de matrícula - Documentos</title>
+</head>
+<body>
+    
+  <form id="formMatricula" onsubmit="return validarFormulario()" enctype="multipart/form-data">
+  <table border="1" cellpadding="8" cellspacing="0">
+    <tr>
+      <td style="padding-top: 10%"><label for="fotoRgFrente">Foto do RG (Frente) *</label></td>
+      <td style="padding-top: 10%"><input type="file" id="fotoRgFrente" name="fotoRgFrente" accept="image/*,.pdf" required></td>
+    </tr>
+    
+    <tr>
+      <td><label for="fotoRgVerso">Foto do RG (Verso) *</label></td>
+      <td><input type="file" id="fotoRgVerso" name="fotoRgVerso" accept="image/*,.pdf" required></td>
+    </tr>
+    
+    <tr>
+      <td><label for="comprovanteEndereco">Comprovante de Endereço *</label></td>
+      <td>
+        <input type="file" id="comprovanteEndereco" name="comprovanteEndereco" accept="image/*,.pdf,.doc,.docx" required><br>
+        <small>(Aceito: contas de luz, água, telefone ou extrato bancário recente)</small>
+      </td>
+    </tr>
+    
+    <tr>
+      <td><label for="historicoEscolar">Histórico Escolar *</label></td>
+      <td>
+        <input type="file" id="historicoEscolar" name="historicoEscolar" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" required><br>
+        <small>(Documento oficial da instituição de ensino anterior)</small>
+      </td>
+    </tr>
+    <tr>
+      <td> <button style="margin-top: -0.5%;" type="submit">Enviar Documentos</button></td>
+      <td><a href="index.php">Voltar</a>
+      <a href="formP3.html">Finalizar matricula</a>
+      </td>
+    </tr>
+    
+     
+  </table>
+  
+
+  
+</form>
+
+
+
+<script>
+function validarEAvancar() {
+  // Verifica se todos os campos obrigatórios estão preenchidos
+  const form = document.getElementById("formMatricula");
+  const camposObrigatorios = form.querySelectorAll("[required]");
+
+  let valido = true;
+  camposObrigatorios.forEach(campo => {
+    if (!campo.value) {
+      valido = false;
+      campo.style.border = "1px solid red"; // Destaca campos vazios
+    }
+  });
+
+  // Se tudo estiver válido, avança para a próxima página
+  if (valido) {
+    window.location.href = "formP3.php";
+  } else {
+    alert("Preencha todos os campos obrigatórios!");
+  }
+}
+</script>
+</body>
+</html>

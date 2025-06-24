@@ -1,0 +1,141 @@
+/* Paleta de cores:
+Amarelo: #ffdb87
+Verde: #379091
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../imagens/fundo_grande.png');
+     background-color: #faf5f4;
+}
+.row{
+    margin-top:5%;
+}
+a{
+    text-decoration: none;
+}
+.cardMa {
+    width: 70%;
+    height: 130%;
+    display: flex;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 auto;
+    transition: 0.3s;
+    border: solid 1px; 
+    background-color: #faf5f4;
+    border-color: #379091;
+    color: #379091;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+}
+
+.cardMa:hover{
+    transform:translatey(-5px);
+    border: solid 1px;
+    background-color: #379091;
+    border:none;
+    color: #f5fbfa;
+}
+
+.conteudoMa {
+    align-self: center;
+}
+
+.nomeMa {
+    font-size: 25px;
+    text-align: center;
+}
+
+.spanMa {
+    text-align: center;
+    font-size: 19px;
+}
+.linkArAl{
+    text-decoration: none;
+    color: #379091;
+}
+.linkArAl:hover{
+    color: #fff;
+}
+
+
+/* Alterações para mobile */
+@media (max-width: 768px) {
+    .row {
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .col-md-4 {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    
+    .cardMa {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        margin: 0;
+    }
+    
+    .nomeMa {
+        font-size: 22px;
+    }
+    
+    .spanMa {
+        font-size: 17px;
+    }
+}
+
+.cardMa {
+    width: 70%;
+    height: 130%;
+    display: flex;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 auto;
+    transition: 0.3s;
+    border: solid 1px;
+    background-color: #faf5f4;
+    border-color: #379091;
+    color: #379091;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+}
+
+.cardMa:hover {
+    transform: translatey(-5px);
+    border: solid 1px;
+    background-color: #379091;
+    border: none;
+    color: #f5fbfa;
+}
+
+.conteudoMa {
+    align-self: center;
+}
+
+.nomeMa {
+    font-size: 25px;
+    text-align: center;
+}
+
+.spanMa {
+    text-align: center;
+    font-size: 19px;
+}
+
+.linkArAl {
+    text-decoration: none;
+    color: #379091;
+}
+
+.linkArAl:hover {
+    color: #fff;
+}

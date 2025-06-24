@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Sanquim</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <!-- Aqui você pode adicionar uma imagem -->
+            
+            <p><img src="../aluno/imagens/logo_sanquim.webp" width="100%" height="60%"></p>
+        </div>
+        <form action="../php/entrar.php" method="post">
+           <input type="text" name="email" placeholder="Usuário" required> 
+            <input type="password" name="senha" placeholder="Senha" required>
+            <a href="esqueciSenha.html">Esqueci minha senha</a>
+          <button type="submit">Entrar</button>
+        </form>
+    </div>
+    <a href="../../posLogin/html/professor/index.html"></a>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/esqueciSenha.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <form class="formulario">
+            <label for="">Digite seu email para recber o link de recuperação </label>
+            <input type="text" required placeholder="Digite seu email">
+            <div class="popup" onclick="myFunction()"> <button type="button">Enviar código</button>
+                <span class="popuptext" id="myPopup">Foi enviado com sucesso!</span>
+            </div>
+        </form>
+    </div>
+    <script>
+
+        function myFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+        }
+    </script>
+</body>
+
+</html>

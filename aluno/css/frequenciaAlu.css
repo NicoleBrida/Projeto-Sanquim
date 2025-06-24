@@ -1,0 +1,351 @@
+body {
+    background-image: url(../imagens/fundo_grande.png);
+    background-position: center;
+    font: 100% arial, sanserif, verdana;
+
+}
+
+.cardFre {
+    width: 60%;
+    min-height: 70px;
+    /* Alterado para min-height para conteúdo maior */
+    display: flex;
+    cursor: pointer;
+    padding: 15px;
+    /* Aumentado o padding */
+    margin: 3% auto 0;
+    border: solid 1px;
+    background-color: #faf5f4;
+    border-color: #379091;
+    color: #379091;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil */
+}
+
+.textFre {
+    font-size: 23px;
+}
+
+.conteudoFre {
+    align-self: center;
+    width: 100%;
+    /* Garante que ocupa toda a largura */
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 20px 0;
+    /* Espaço horizontal entre células */
+}
+
+td {
+    padding: 8px 12px;
+    vertical-align: middle;
+    /* Alinhamento vertical centralizado */
+    text-align: left;
+    position: relative;
+}
+
+/* Estilização específica para cada coluna */
+td:nth-child(1) {
+    width: 40%;
+    /* Largura maior para o nome da disciplina */
+}
+
+td:nth-child(2) {
+    width: 30%;
+    /* Largura média para a frequência */
+    text-align: center;
+}
+
+td:nth-child(3) {
+    width: 30%;
+    /* Largura para o botão */
+    text-align: right;
+}
+
+button {
+    background-color: #379091;
+    color: white;
+    font-size: 19px;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: #faf5f4;
+    border: 1px solid;
+    border-color: #2a7a7a;
+}
+
+ .bttFre button:hover {
+           background-color: #faf5f4;
+            border: 1px solid;
+            border-color: #2a7a7a;
+            color: #2a7a7a;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+
+.bttFre button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.popup {
+    font-family: 'Segoe UI', sans-serif;
+    width: 450px;
+    background-color: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    padding: 50px;
+    cursor: auto;
+    visibility: hidden;
+    z-index: 1000;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.popup.open-popup {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.popup-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    margin: 0;
+    transform: none;
+}
+
+.popup img {
+    width: 25px;
+}
+
+.popup-header {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.popup h1 {
+    color: #379091;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.periodo {
+    color: #777;
+    font-size: 0.9em;
+}
+
+.grade-container {
+    margin-bottom: 20px;
+}
+
+.grade-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    padding: 10px 0;
+    border-bottom: 1px dashed #f0f0f0;
+}
+
+.grade-label {
+    flex: 1;
+    color: #555;
+}
+
+.grade-value {
+    width: 50px;
+    text-align: right;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.grade-weight {
+    color: #888;
+    font-size: 0.8em;
+    width: 40px;
+}
+
+.progress-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.progress-bar {
+    height: 30px;
+    background: #379091;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    transition: width 0.5s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .popup {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .popup {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .popup h2 {
+        font-size: 1.3em;
+    }
+
+    .progress-bar {
+        height: 25px;
+        line-height: 25px;
+    }
+}
+
+.progress-container {
+    width: 80%;
+    max-width: 600px;
+    background-color: #e0e0e0;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 30px;
+    background: #379091;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    transition: width 0.5s ease-in-out;
+}
+
+@media (max-width: 1024px) {
+    .cardFre {
+        width: 80%;
+        padding: 12px;
+    }
+
+    .textFre {
+        font-size: 21px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .popup {
+        width: 90%;
+        padding-left: 60px;
+    }
+
+    .popup button {
+        transform: translate(300px);
+        /* ajustado proporcionalmente */
+    }
+}
+
+@media (max-width: 768px) {
+    .cardFre {
+        flex-direction: column;
+        width: 90%;
+        padding: 10px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .textFre {
+        font-size: 19px;
+    }
+
+    .popup {
+        width: 95%;
+        padding-left: 50px;
+    }
+
+    .popup button {
+        transform: translate(250px);
+    }
+}
+
+@media (max-width: 480px) {
+    .cardFre {
+        width: 95%;
+        padding: 8px;
+    }
+
+    .textFre {
+        font-size: 17px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .popup {
+        width: 100%;
+        padding-left: 40px;
+    }
+
+    .popup button {
+        transform: translate(200px);
+    }
+
+    td:nth-child(1),
+    td:nth-child(2),
+    td:nth-child(3) {
+        width: 100%;
+        display: block;
+        text-align: left;
+    }
+
+    table {
+        border-spacing: 10px 0;
+    }
+}

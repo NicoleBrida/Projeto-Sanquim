@@ -1,0 +1,142 @@
+
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    height: 60px;
+    cursor: pointer;
+}
+
+
+#conteudo {
+    padding: 20px;
+    padding-left: 20px;
+    float: center;
+}
+
+#inicio {
+    width: auto;
+    background-color: rgb(55, 144, 145, 0.9);
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+
+.layout {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 80px;
+    margin-top: 40px;
+    margin-left: 20px;
+    position: relative;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.botoes label {
+    display: block;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #ffc4447a;
+    border: 2px solid #FDB813;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    width: 180px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+.botoes label:hover {
+    background-color: #f5c46b;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.paineis {
+    position: relative;
+}
+
+.painel {
+    position: absolute;
+    top: 0;
+    left: 100px;
+    background-color: #FFF5DC;
+    border: 2px solid #FDB813;
+    padding: 15px 20px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    min-width: 1000px;
+    display: none;
+    z-index: 10;
+    cursor: default;
+}
+
+.painel h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #444;
+}
+
+ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Mostrar painel quando botão está selecionado */
+#ensino1:checked ~ .paineis .painel-ensino1,
+#ensino2:checked ~ .paineis .painel-ensino2,
+#ensino3:checked ~ .paineis .painel-ensino3,
+#vestibulinho:checked ~ .paineis .painel-vestibulinho,
+#vestibular:checked ~ .paineis .painel-vestibular,
+#empreendedorismo:checked ~ .paineis .painel-empreendedorismo {
+    display: block;
+}
+
+.fechar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+}
+
+.fechar:hover {
+    color: rgba(0, 0, 0, 0.733);
+}
+
+input[type=text],
+input[type=tel],
+input[type=email] {
+    margin-bottom: 10px;
+    height: 20px;
+}
+
+input[type=email] {
+    width: 250px;
+}
+
+.nome {
+    width: 250px;
+}

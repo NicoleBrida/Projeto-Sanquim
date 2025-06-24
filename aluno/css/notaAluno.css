@@ -1,0 +1,297 @@
+  body {
+            background-image: url(../imagens/fundo_grande.png);
+            background-position: center;
+            font: 100% Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        
+        }
+        
+      
+        /* CARDS DE DISCIPLINAS */
+        .cardFre {
+            width: 60%;
+            min-height: 70px;
+            display: flex;
+            padding: 15px;
+            margin: 20px auto;
+            border: solid 1px #379091; 
+            background-color: #faf5f4;
+            color: #379091;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            font-weight: normal;
+        }
+        
+        .conteudoFre {
+            align-self: center;
+            width: 100%;
+        }
+        
+        .textFre {
+            font-size: 1.3em;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        td {
+            padding: 8px 12px;
+            vertical-align: middle;
+        }
+        
+        td:nth-child(1) {
+            width: 40%;
+        }
+        
+        td:nth-child(2) {
+            width: 35%;
+            text-align: center;
+        }
+        
+        td:nth-child(3) {
+            width: 25%;
+            text-align: right;
+        }
+        
+        .bttFre button {
+            background-color: #379091;
+            color: white;
+            font-size: 1em;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .bttFre button:hover {
+           background-color: #faf5f4;
+            border: 1px solid;
+            border-color: #2a7a7a;
+            color: #2a7a7a;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    
+        .popup {
+            font-family: 'Segoe UI', sans-serif;
+            width: 450px;
+            background-color: #fff;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            padding: 30px;
+            cursor: auto;
+            visibility: hidden;
+            z-index: 1000;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border-radius: 10px;
+        }
+        
+        .popup.open-popup {
+            visibility: visible;
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .popup-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .bntFechar {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+        }
+        
+        .bntFechar img {
+            width: 25px;
+        }
+        
+        .popup-header {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        
+        .popup h1 {
+            color: #379091;
+            font-size: 1.5em;
+            margin: 0;
+        }
+        
+        .periodo {
+            color: #777;
+            font-size: 0.9em;
+        }
+        
+        .grade-container {
+            margin-bottom: 20px;
+        }
+        
+        .grade-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            padding: 8px 0;
+            border-bottom: 1px dashed #f0f0f0;
+        }
+        
+        .grade-label {
+            flex: 1;
+            color: #555;
+        }
+        
+        .grade-value {
+            width: 50px;
+            text-align: right;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        .grade-weight {
+            color: #888;
+            font-size: 0.8em;
+            width: 40px;
+        }
+        
+        .final-grade {
+            background: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .grade-display {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .status {
+            font-size: 0.9em;
+            text-align: center;
+            padding: 5px;
+            border-radius: 4px;
+        }
+        
+        .approved {
+            background: #e8f5e9;
+            color: #2e7d32;
+        }
+        
+        .popup-actions {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        
+        .action-btn {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+        
+        .export-btn {
+            background: #379091;
+            color: white;
+
+        }
+        
+        .export-btn:hover {
+            background: #fff;
+            border: 1px solid;
+            border-color: #2a7a7a;
+            color: #2a7a7a;
+        }
+        
+      
+      
+        
+        /* RESPONSIVIDADE */
+        @media (max-width: 1024px) {
+            .cardFre {
+                width: 90%;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .checkbtn {
+                display: block;
+            }
+            
+            .nav-mobile {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                background: white;
+                width: 100%;
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+                transition: all 0.3s ease;
+            }
+            
+            #check:checked ~ .nav-mobile {
+                left: 0;
+            }
+            
+            .popup {
+                width: 90%;
+                padding: 20px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .cardFre {
+                width: 95%;
+                padding: 10px;
+            }
+            
+            .textFre {
+                font-size: 1.1em;
+            }
+            
+            .bttFre button {
+                padding: 8px 15px;
+                font-size: 0.9em;
+            }
+            
+            td:nth-child(1),
+            td:nth-child(2),
+            td:nth-child(3) {
+                display: block;
+                width: 100%;
+                text-align: left;
+            }
+            
+            table {
+                border-spacing: 0;
+            }
+        }
+    
