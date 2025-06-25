@@ -9,6 +9,106 @@
     font-size: 16px;
 }
 
+
+label{
+    color:#379091;
+font-size: large;
+
+}
+
+.formulario-aula {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+    padding: 20px;
+    background-color:transparent;
+    border-radius: 12px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Campo de seleção */
+.formulario-aula select {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid #379091;
+    border-radius: 8px;
+    background-color: #FAF5F5;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Campo de data */
+.formulario-aula input[type="date"] {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid #379091;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #FAF5F5;
+    color: #333;
+    transition: border 0.3s ease;
+}
+
+.formulario-aula input[type="date"]:focus {
+    border-color: #142324;
+    outline: none;
+}
+
+/* Campo de descrição (textarea) */
+.formulario-aula textarea {
+    width: 100%;
+    max-width: 400px;
+    height: 120px;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #379091;
+    border-radius: 8px;
+    background-color: #FAF5F5;
+    color: #333;
+    resize: none;
+    transition: border 0.3s ease;
+}
+
+.formulario-aula textarea::placeholder {
+    color: #aaa;
+}
+
+.formulario-aula textarea:focus {
+    border-color: #142324;
+    outline: none;
+}
+
+/* Botões */
+.botoes-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+#sair, #freq {
+    background-color: #379091;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#sair:hover, #freq:hover {
+    background-color: #142324;
+}
+
+
 #conteudo {
     padding: 20px;
     padding-left: 20px;
@@ -16,17 +116,55 @@
 }
 
 input[type="checkbox"] {
-      transform: scale(1.5); /* Aumenta o tamanho em 1.5 vezes */
-      margin: 10px; /* Adiciona margem para espaçamento */
-    }
-
-.container-tabela-e-botao {
-    text-align: center;
-    margin-top: 20px;
-        margin-bottom: 20px;
-
+    transform: scale(1.5);
+    /* Aumenta o tamanho em 1.5 vezes */
+    margin: 10px;
+    /* Adiciona margem para espaçamento */
 }
 
+
+.tabelas-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.tabela-lateral {
+    width: 180px;
+}
+
+.tabela-lateral table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabela-lateral th,
+.tabela-lateral td {
+    border: 1px solid #379091;
+    padding: 8px;
+    text-align: center;
+}
+
+.tabela-lateral tr:nth-child(even) td {
+    background-color: #ffe6ac;
+}
+
+.tabela-principal {
+    width: 40%;
+}
+
+.tabela-principal table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.container-tabela-e-botao {
+    margin: 0;
+    /* Apagamos o margin-left antigo */
+}
 
 h2 {
     font-size: 22px;
@@ -36,8 +174,10 @@ h2 {
 
 .botoes-container {
     display: flex;
-    justify-content: flex-end; /* Alinha à direita */
-    gap: 10px; /* Espaço entre os botões */
+    justify-content: flex-end;
+    /* Alinha à direita */
+    gap: 10px;
+    /* Espaço entre os botões */
     margin-top: 20px;
     margin-right: 10%;
 }
@@ -61,8 +201,8 @@ h2 {
     background-color: #142324;
 }
 
-#sair:hover{
-        background-color: #142324;
+#sair:hover {
+    background-color: #142324;
 
 }
 
@@ -99,8 +239,8 @@ table {
     }
 
     .botoes-container {
-    margin-bottom: 20%;
-}
+        margin-bottom: 20%;
+    }
 }
 
 #tituloBusca {

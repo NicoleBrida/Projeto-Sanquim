@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Turma - Professor</title>
+    <title>Frequência - Professor</title>
     <link rel="stylesheet" href="../css/turma.css" type="text/css">
 
 </head>
@@ -11,7 +11,7 @@
 
 <div id="conteudo">
     <div id="inicio">
-        <h1>Turmas</h1>
+        <h1>Frequência</h1>
         <p>Aqui você tem o controle de todas as suas turmas</p>
     </div>
 

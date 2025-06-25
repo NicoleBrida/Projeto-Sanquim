@@ -28,7 +28,7 @@
 
         <nav class="nav-mobile">
             <a href="../layout/index.php"> Início </a>
-            <a href="../layout/turma.php"> Turmas </a>
+            <a href="../layout/turma.php"> Frequência </a>
             <a href="../layout/notas.php"> Notas </a>
             <a href="../layout/arquivos.php"> Arquivos </a>
             <a href="../layout/plano.php"> Plano de Aula </a>

@@ -107,7 +107,7 @@
 
     <div class="botoes-container">
         <a id="sair" href="../layout/plano.php">Sair</a>
-        <button id="freq">Registrar Aula</button>
+        <button id="freq">Registrar Plano de Aula</button>
     </div>
 
 </div>
