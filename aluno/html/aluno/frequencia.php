@@ -31,7 +31,7 @@
             </div>
             <div class="grade-container">
                 <div class="grade-item">
-                    <span class="grade-label">Aulas lessionadas:</span>
+                    <span class="grade-label">Aulas lecionadas:</span>
                     <span class="grade-value">30</span>
                 </div>
                 <div class="grade-item">
@@ -69,7 +69,7 @@
             </div>
             <div class="grade-container">
                 <div class="grade-item">
-                    <span class="grade-label">Aulas lessionadas:</span>
+                    <span class="grade-label">Aulas lecionadas:</span>
                     <span class="grade-value">30</span>
                 </div>
                 <div class="grade-item">
@@ -107,7 +107,7 @@
             </div>
             <div class="grade-container">
                 <div class="grade-item">
-                    <span class="grade-label">Aulas lessionadas:</span>
+                    <span class="grade-label">Aulas lecionadas:</span>
                     <span class="grade-value">30</span>
                 </div>
                 <div class="grade-item">
@@ -145,7 +145,7 @@
             </div>
             <div class="grade-container">
                 <div class="grade-item">
-                    <span class="grade-label">Aulas lessionadas:</span>
+                    <span class="grade-label">Aulas lecionadas:</span>
                     <span class="grade-value">30</span>
                 </div>
                 <div class="grade-item">
@@ -183,7 +183,7 @@
             </div>
             <div class="grade-container">
                 <div class="grade-item">
-                    <span class="grade-label">Aulas lessionadas:</span>
+                    <span class="grade-label">Aulas lecionadas:</span>
                     <span class="grade-value">30</span>
                 </div>
                 <div class="grade-item">
@@ -221,7 +221,7 @@
             </div>
             <div class="grade-container">
                 <div class="grade-item">
-                    <span class="grade-label">Aulas lessionadas:</span>
+                    <span class="grade-label">Aulas lecionadas:</span>
                     <span class="grade-value">30</span>
                 </div>
                 <div class="grade-item">
@@ -259,7 +259,7 @@
             </div>
             <div class="grade-container">
                 <div class="grade-item">
-                    <span class="grade-label">Aulas lessionadas:</span>
+                    <span class="grade-label">Aulas lecionadas:</span>
                     <span class="grade-value">30</span>
                 </div>
                 <div class="grade-item">
@@ -297,7 +297,7 @@
             </div>
             <div class="grade-container">
                 <div class="grade-item">
-                    <span class="grade-label">Aulas lessionadas:</span>
+                    <span class="grade-label">Aulas lecionadas:</span>
                     <span class="grade-value">30</span>
                 </div>
                 <div class="grade-item">
@@ -335,7 +335,7 @@
             </div>
             <div class="grade-container">
                 <div class="grade-item">
-                    <span class="grade-label">Aulas lessionadas:</span>
+                    <span class="grade-label">Aulas lecionadas:</span>
                     <span class="grade-value">30</span>
                 </div>
                 <div class="grade-item">
@@ -373,7 +373,7 @@
             </div>
             <div class="grade-container">
                 <div class="grade-item">
-                    <span class="grade-label">Aulas lessionadas:</span>
+                    <span class="grade-label">Aulas lecionadas:</span>
                     <span class="grade-value">30</span>
                 </div>
                 <div class="grade-item">
@@ -411,7 +411,7 @@
             </div>
             <div class="grade-container">
                 <div class="grade-item">
-                    <span class="grade-label">Aulas lessionadas:</span>
+                    <span class="grade-label">Aulas lecionadas:</span>
                     <span class="grade-value">30</span>
                 </div>
                 <div class="grade-item">
